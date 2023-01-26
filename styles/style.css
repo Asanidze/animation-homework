@@ -1,0 +1,51 @@
+.stadium {
+    width: 100%;
+    position: relative;
+}
+.keeper {
+    position: absolute;
+    top: 470px;
+    left: 550px;
+    width: 150px;
+    animation: keeper 2s infinite;
+}
+@keyframes keeper {
+   0% {transform: translateX(0);}
+   50% {transform: translateX(90px);}
+   70% {transform: translateX(-80px)}
+   100% {transform: translateX(0);}
+}
+    .ball {
+    position: absolute;
+    top: 653px;
+    left: 615px;
+    width: 35px;
+    animation: ball 2s infinite 1.6s;
+}
+@keyframes ball {
+    0% {transform: translate(0);}
+    50% {transform: translate(-150px,-170px);}
+}
+.footballer {
+    position: absolute;
+    top: 600px;
+    left: 450px;
+    width: 150px;
+    animation: footballer 2s infinite;
+}
+@keyframes footballer {
+    from {top: 600px; left: 450px;}
+    to {top: 460px; left: 520px;}
+}
+.goal {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 350px;
+    opacity: 0;
+    animation: goal 2s infinite 2s;
+}
+@keyframes goal {
+    0% {opacity: 0; transform: translate(0) rotate(0deg);}
+    100%{opacity: 100%; transform: translate(100%) rotate(360deg);}
+}   
